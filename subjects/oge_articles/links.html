@@ -1,0 +1,154 @@
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400&display=swap" rel="stylesheet">
+    <title>Статья</title>
+    <style>
+        body {
+            font-family: 'Fira Code', monospace;
+            margin: 20px;
+        }
+
+        .important-red {
+            border: 2px solid red;
+            padding: 10px;
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .important-red::before {
+            content: '!';
+            color: red;
+            font-weight: bold;
+            position: absolute;
+            left: -20px;
+            top: 10px;
+            font-size: 24px;
+        }
+
+        .important-yellow {
+            border: 2px solid yellow;
+            padding: 10px;
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .important-yellow::before {
+            content: '!';
+            color: yellow;
+            font-weight: bold;
+            position: absolute;
+            left: -20px;
+            top: 10px;
+            font-size: 24px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+
+            .important-red,
+            .important-yellow {
+                padding: 8px;
+            }
+
+            .important-red::before,
+            .important-yellow::before {
+                font-size: 20px;
+                left: -15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 align="center">Адресация в сети интернет</h1>
+        <p>
+            Доступ ко всем ресурсам в сети интернет происходит с помощью определённого набора правил(этот набор правил
+            называют протоколом).
+            Нужны эти правила, для того, чтобы доступ ко всем ресурсам осуществлялся одинаково и мы всегда знали как
+            попасть на тот или иной сайт или сервер.
+        </p>
+
+        <p>
+            Как вы наверняка слышали - любой компьютер в сети имеет уникальный адрес, который называют IP адресом.
+            По каким же правилам(или говоря правильно по какому протколу он строится)? Есть три основных правила:
+        <div class="important-red">
+            <ul>
+                <li>IP адрес состоит из 4 чисел</li>
+                <li>Каждое число не меньше 0 и не больше 255</li>
+                <li>Числа разделены точками</li>
+
+
+            </ul>
+        </div>
+        Рассмотрим задачку:
+
+        </p>
+
+        <img src="pics/2.png" alt="Пример изображения" class="img-fluid">
+
+        <p>
+            IP-адрес представляет собой четыре разделенных точками числа, каждое из которых не больше 255.
+
+            Под буквой Б указано «.44». Так как числа в IP-адресе не могут быть больше 255, нельзя добавить в конце
+            этого числа еще один разряд. Следовательно, этот фрагмент  — последний.
+
+            В конце фрагмента В  — число 144, отделенное точкой. Так как в IP-адресе не может быть числа, большего 255,
+            то за фрагментом В должен следовать фрагмент, начинающийся с точки. Значит, фрагмент В идет перед фрагментом
+            Б.
+
+            Фрагмент под буквой Г не может быть первым, поскольку в таком случае за ним вынужден стоять фрагмент А, а в
+            IP-адресе не может быть числа, большего 255.
+
+            Следовательно, ответ АГВБ.
+        </p>
+
+
+        <p>
+            Конечно же сейчас никто не запоминает IP адрес сервера, к тому же на одном сервере может быть размещён
+            десяток сайтов. Проще запомнить так называемое доменное имя сайта.
+            Их вы тоже наверняка видели, доменное имя это что-то вроде yandex.ru, mail.ru или facebook.com.
+            Конечно же как и всё в мире информатики составление доменных имён подчинено строгим правилам.
+            Допустим на серевер yandex.ru размещена
+            страница teleport.html
+            Что же нужно учесть, чтобы построить правильный адрес сайта?
+        <div class="important-red">
+            <ul>
+                <li>На первом месте ставится название протокола(http, https, ftp)</li>
+                <li>Затем идёт символ <b>://</b></li>
+                <li>После идёт имя сервера, например yandex.ru</li>
+                <li>Затем идёт специальный символ <b>/</b></li>
+                <li>Наконец идёт название страницы, например teleport.html</li>
+                Таким образом, если бы такой ресурс существовал, он имел бы адрес:
+                <i>https://yandex.ru/teleport.html</i>
+
+
+            </ul>
+        </div>
+        Давайте рассмотрим ещё задачку из ОГЭ:
+        <img src="pics/3.png" alt="Пример изображения" class="img-fluid">
+        </p>
+        <p>
+            Сначала указывается протокол (как правило это «ftp» или «http»), потом «://», потом сервер, затем «/»,
+            название файла указывается в конце. Таким образом, адрес будет следующим: http://book.ru/page.htm.
+            Следовательно, ответ 7364125.
+        </p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
