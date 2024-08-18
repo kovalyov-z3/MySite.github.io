@@ -1,0 +1,123 @@
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400&display=swap" rel="stylesheet">
+    <title>Статья</title>
+    <style>
+        body {
+            font-family: 'Fira Code', monospace;
+            margin: 20px;
+        }
+
+        .important-red {
+            border: 2px solid red;
+            padding: 10px;
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .important-red::before {
+            content: '!';
+            color: red;
+            font-weight: bold;
+            position: absolute;
+            left: -20px;
+            top: 10px;
+            font-size: 24px;
+        }
+
+        .important-yellow {
+            border: 2px solid yellow;
+            padding: 10px;
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .important-yellow::before {
+            content: '!';
+            color: yellow;
+            font-weight: bold;
+            position: absolute;
+            left: -20px;
+            top: 10px;
+            font-size: 24px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+
+            .important-red,
+            .important-yellow {
+                padding: 8px;
+            }
+
+            .important-red::before,
+            .important-yellow::before {
+                font-size: 20px;
+                left: -15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 align="center">Алгебра логики</h1>
+        <p>
+            Как мы с вами принимаем те или иные решения? С помощью логики. В 1847 году Джордж Буль решил
+            систематизировать нашу логику и издал трактат «Математический анализ логики», который положил начало новой
+            науке - Алгебре Логики.
+        </p>
+
+        <div class="important-red">
+            Алгебра логики (алгебра высказываний) — раздел математической логики, в котором изучаются логические
+            операции над высказываниями.
+        </div>
+
+        <p>
+            Как понятно из определения выше - основа алгебры логики(как и обычной алгебры) - высказывания и операции.
+            Давайте по порядку.
+        <div class="important-red">
+            Логическое высказывание — любое повествовательное предложение или арифметическое выражение, в отношении
+            которого можно однозначно утверждать, что его содержание истинно — 1 или ложно — 0
+        </div>
+        Над этими высказываниями можно производить различные операции, этим мы занимаемся каждый день, когда комбинируем
+        высказывания. Например: НА УЛИЦЕ СЫРО И ХОЛОДНО. На самом деле существует 3 основных логических операции это
+        операции:
+        <b>И</b>, <b>ИЛИ</b>, <b>НЕ</b>.
+        </p>
+
+        <img src="pics/1.png" alt="Пример изображения" class="img-fluid">
+
+        <p>
+            Картинка выше отражает простую мысль - общий результат логического выражения, содержащего два высказывания и
+            оператор <b>И</b> является 1(истиной) только если оба высказывания истины.
+            Соответсвенно общий результат логического выражения, содержащего два высказывания и оператор <b>ИЛИ</b>
+            является 1(истиной) только если хотя бы 1 высказывание истино.
+        </p>
+
+
+        <p>
+            Теперь давайте перейдём к примерам из ОГЭ.
+        <div class="important-yellow">Для какого целого числа X ЛОЖНО высказывание:
+
+            (X > 3) ИЛИ НЕ (X > 2)?</div>
+        </p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

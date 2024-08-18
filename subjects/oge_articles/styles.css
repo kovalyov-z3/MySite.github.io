@@ -1,0 +1,49 @@
+body {
+    font-family: 'Fira Code', monospace;
+    background-color: #ffffff;
+    /* белый фон */
+    color: #000000;
+    /* черный текст */
+}
+
+.article-text {
+    text-align: left;
+    /* выравнивание текста по левому краю */
+    margin-bottom: 20px;
+}
+
+.center-img {
+    display: block;
+    /* для центровки изображения */
+    margin: 0 auto;
+    /* для центровки изображения */
+    width: 600px;
+    /* фиксированная ширина для изображений */
+    height: auto;
+    /* автоматическая высота для сохранения пропорции */
+}
+
+.highlight-warning {
+    border: 2px solid yellow;
+    /* желтая рамка */
+    padding: 5px;
+    position: relative;
+}
+
+
+
+.highlight-danger {
+    border: 2px solid red;
+    /* красная рамка */
+    padding: 5px;
+    position: relative;
+}
+
+
+
+@media (max-width: 768px) {
+    .center-img {
+        width: 100%;
+        /* на мобильных устройствах изображения занимают 100% ширины */
+    }
+}
