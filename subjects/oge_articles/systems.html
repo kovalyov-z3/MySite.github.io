@@ -1,0 +1,48 @@
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Статья</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 align="center">Системы счисления</h1>
+        <p>Числа предоставляют очень удобную абстракцию для подсчёта тех или иных величин,
+            однако записать число можно по-разному,
+            например XXI и 21 это одно и тоже число,
+            записанное в разных <b>системах счисления</b>. </p>
+        <div class="important-red">Система счисления – это способ записи чисел с помощью заданного набора специальных
+            символов и соответствующие ему правила действий над числами. </div>
+        <div class="important-red">Алфавит системы счисления – это набор символов используемых для записи чисел в данной
+            системе счисления. </div>
+        <p>Как понятно из определения выше - существуют определенные правила,
+            согласно которым мы записываем число в той или иной системе счисления. Давайте рассмотрим пример. Число 543
+            это 5 сотен,
+            4 десятка и 3 единицы. Или же 543=5*100+4*10+3*1=5*10<sup>2</sup>+4*10<sup>1</sup>+3*10<sup>0</sup>Как видно
+            за каждый разряд отвечает десятка,
+            поэтому нашу систему и называют десятичной. Аналогично работают и другие системы,
+            например число 101 в двоичной системе счисления это 1*2<sup>0</sup>+0*2<sup>1</sup>+1*2<sup>2</sup>=5.
+        <div class="important-red">Чтобы перевести число из любой системы счисления в десятичную нужно сложить разряды
+            <b>справа налево</b>,
+            например 123<sub>8</sub>=3*8<sup>0</sup>+2*8<sup>1</sup>+1*8<sup>2</sup>=83<sub>10</sub></div>Сложнее дело
+        обстоит с переводом из десятичной системы счисления в другую,
+        алгоритм для перевода числа 11 в двоичную систему представлен на картиинке. </p><img src="pics/3.jpg"
+            alt="Пример изображения" class="img-fluid">
+        <p>Аналогично и с другими система счисления,
+            необходимо последовательно делить на основание системы счисления,
+            остатки от деления и будут нашими разрядами. </p>
+    </div>
+    <div class="btn-block"><a href="../oge.html" class="btn btn-custom">Назад к теории</a><a
+            href="https://example.com/link2" class="btn btn-custom">Вперёд к домашке</a></div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

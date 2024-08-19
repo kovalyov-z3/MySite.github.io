@@ -6,67 +6,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400&display=swap" rel="stylesheet">
     <title>Статья</title>
-    <style>
-        body {
-            font-family: 'Fira Code', monospace;
-            margin: 20px;
-        }
-
-        .important-red {
-            border: 2px solid red;
-            padding: 10px;
-            margin: 20px 0;
-            position: relative;
-        }
-
-        .important-red::before {
-            content: '!';
-            color: red;
-            font-weight: bold;
-            position: absolute;
-            left: -20px;
-            top: 10px;
-            font-size: 24px;
-        }
-
-        .important-yellow {
-            border: 2px solid yellow;
-            padding: 10px;
-            margin: 20px 0;
-            position: relative;
-        }
-
-        .important-yellow::before {
-            content: '!';
-            color: yellow;
-            font-weight: bold;
-            position: absolute;
-            left: -20px;
-            top: 10px;
-            font-size: 24px;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
-
-        @media (max-width: 768px) {
-
-            .important-red,
-            .important-yellow {
-                padding: 8px;
-            }
-
-            .important-red::before,
-            .important-yellow::before {
-                font-size: 20px;
-                left: -15px;
-            }
-        }
-    </style>
+    <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
@@ -203,6 +143,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <div class="btn-block"><a href="../oge.html" class="btn btn-custom">Назад к теории</a><a
+            href="https://example.com/link2" class="btn btn-custom">Вперёд к домашке</a></div>
 </body>
 
 </html>
