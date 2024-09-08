@@ -1,0 +1,133 @@
+body {
+    font-family: 'Fira Code', monospace;
+    background-color: #ffffff;
+    /* белый фон */
+    color: #000000;
+    /* черный текст */
+}
+
+.article-text {
+    text-align: left;
+    /* выравнивание текста по левому краю */
+    margin-bottom: 20px;
+}
+
+.center-img {
+    display: block;
+    /* для центровки изображения */
+    margin: 0 auto;
+    /* для центровки изображения */
+    width: 600px;
+    /* фиксированная ширина для изображений */
+    height: auto;
+    /* автоматическая высота для сохранения пропорции */
+}
+
+.highlight-warning {
+    border: 2px solid yellow;
+    /* желтая рамка */
+    padding: 5px;
+    position: relative;
+}
+
+
+
+.highlight-danger {
+    border: 2px solid red;
+    /* красная рамка */
+    padding: 5px;
+    position: relative;
+}
+
+
+
+@media (max-width: 768px) {
+    .center-img {
+        width: 100%;
+        /* на мобильных устройствах изображения занимают 100% ширины */
+    }
+}
+
+.btn-block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+.btn-custom {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-custom:hover {
+    background-color: #000;
+    color: #fff;
+    border-color: #fff;
+}
+
+body {
+    font-family: 'Fira Code', monospace;
+    margin: 20px;
+}
+
+.important-red {
+    border: 2px solid red;
+    padding: 10px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.important-red::before {
+    content: '!';
+    color: red;
+    font-weight: bold;
+    position: absolute;
+    left: -20px;
+    top: 10px;
+    font-size: 24px;
+}
+
+.important-yellow {
+    border: 2px solid yellow;
+    padding: 10px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.important-yellow::before {
+    content: '!';
+    color: yellow;
+    font-weight: bold;
+    position: absolute;
+    left: -20px;
+    top: 10px;
+    font-size: 24px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+
+    .important-red,
+    .important-yellow {
+        padding: 8px;
+    }
+
+    .important-red::before,
+    .important-yellow::before {
+        font-size: 20px;
+        left: -15px;
+    }
+}
